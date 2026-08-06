@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
           <div className="hero-card">
-            <img src="/IMG_6291.JPEG" alt="Bedirhan Donmez" className="profile-image" />
+            <img src="/bedirhan.JPEG" alt="Bedirhan Donmez" className="profile-image" />
             <div className="status-card">
               <span className="status-dot"></span>
               <span>Åben for praktik og junior-muligheder</span>
