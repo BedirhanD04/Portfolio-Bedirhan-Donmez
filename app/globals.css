@@ -165,7 +165,7 @@ body {
 
 .profile-image {
   width: 100%;
-  max-width: 350px;
+  max-width: 250px;
   border-radius: 20px;
   border: 1px solid var(--card-border);
 }
