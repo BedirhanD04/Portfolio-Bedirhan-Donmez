@@ -55,18 +55,16 @@ export default function Home() {
             <h2>Motiveret IT-elev med fokus på softwareudvikling</h2>
           </div>
 
-          <div className="about-grid">
-            <div className="glass-card">
-              <p>
-                Mit navn er Bedirhan Donmez, og jeg er under uddannelse inden for Data og Kommunikation
-                på TEC Ballerup. Jeg har interesse for programmering, webudvikling, databaser og IT-support.
-              </p>
-              <br />
-              <p>
-                Jeg lærer bedst ved at bygge rigtige projekter. Derfor arbejder jeg løbende på egne projekter
-                med Python, API&apos;er, HTML, CSS, JavaScript og SQL.
-              </p>
-            </div>
+          <div className="glass-card">
+            <p>
+              Mit navn er Bedirhan Donmez, og jeg er under uddannelse inden for Data og Kommunikation
+              på TEC Ballerup. Jeg har interesse for programmering, webudvikling, databaser og IT-support.
+            </p>
+            <br />
+            <p>
+              Jeg lærer bedst ved at bygge rigtige projekter. Derfor arbejder jeg løbende på egne projekter
+              med Python, API&apos;er, HTML, CSS, JavaScript og SQL.
+            </p>
           </div>
         </section>
 
@@ -133,8 +131,7 @@ export default function Home() {
               <p>API&apos;er, CLI-apps, JSON og backend-logik.</p>
             </div>
             <div className="skill-card">
-              <span>🌐</span>
-              <h3>HTML & CSS</h3>
+              <h3>🌐 HTML & CSS</h3>
               <p>Responsive layouts og moderne UI.</p>
             </div>
             <div className="skill-card">
@@ -176,10 +173,10 @@ export default function Home() {
 
         {/* CONTACT SECTION */}
         <section id="contact" className="section">
-          <div className="contact-card" style={{ textAlign: 'center' }}>
+          <div className="contact-card">
             <p className="eyebrow">Kontakt</p>
             <h2>Lad os tage kontakt</h2>
-            <p style={{ marginBottom: '1.5rem' }}>
+            <p>
               Jeg er interesseret i praktik og junior-muligheder.
             </p>
             <a className="btn primary" href="mailto:Bdrhn.dnz00@gmail.com">Send email</a>
