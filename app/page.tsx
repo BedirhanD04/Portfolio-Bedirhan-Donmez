@@ -104,16 +104,16 @@ export default function Home() {
             </article>
 
             <article className="project-card">
-              <h3>Excel Data Aggregator</h3>
+              <h3>Smart Data Analysis Platform</h3>
               <p>
-                Python automation tool that collects work hours from multiple Excel spreadsheets.
+                A full-stack B2B SaaS platform where users upload a CSV or Excel file and instantly get row/column statistics and auto-generated charts. Note: This site is currently an interactive demo.
               </p>
               <div className="tech-list">
+                <span>Next.js (App Router) + TypeScript</span>
+                <span>Node.js</span>
                 <span>Python</span>
-                <span>openpyxl</span>
-                <span>Automation</span>
               </div>
-              <a className="btn secondary" href="https://github.com/BedirhanD04/excel-report-automation" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a className="btn secondary" href="https://data-saas-platform.vercel.app/" target="_blank" rel="noopener noreferrer">Website</a>
             </article>
           </div>
         </section>
