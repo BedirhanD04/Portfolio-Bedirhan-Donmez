@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --bg-color: #040810;
   --bg-gradient: radial-gradient(circle at top right, #0a48bb 0%, transparent 40%),
@@ -102,7 +104,8 @@ body {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 0.5rem;
-  color: var(--text-hero-gray);
+  color: var(--text-main);
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
 }
 
 .hero h2 {
@@ -159,6 +162,9 @@ body {
 }
 
 .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.2s;
