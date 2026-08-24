@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, Terminal, Globe, Zap, Database, Calendar, ExternalLink } from "lucide-react";
 import Velaris from "@/components/ui/velaris";
 
 // lucide-react no longer ships trademarked brand logos, so GitHub/LinkedIn
@@ -124,7 +124,11 @@ export default function Home() {
                 <span>REST API</span>
                 <span>JSON</span>
               </div>
-              <a className="btn secondary" href="https://github.com/BedirhanD04/weather-dashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <div className="project-links">
+                <a className="btn secondary" href="https://github.com/BedirhanD04/weather-dashboard" target="_blank" rel="noopener noreferrer">
+                  <GithubIcon size={16} /> GitHub
+                </a>
+              </div>
             </article>
 
             <article className="project-card">
@@ -137,7 +141,11 @@ export default function Home() {
                 <span>JSON</span>
                 <span>CLI</span>
               </div>
-              <a className="btn secondary" href="https://github.com/BedirhanD04/budget_tracker" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <div className="project-links">
+                <a className="btn secondary" href="https://github.com/BedirhanD04/budget_tracker" target="_blank" rel="noopener noreferrer">
+                  <GithubIcon size={16} /> GitHub
+                </a>
+              </div>
             </article>
 
             <article className="project-card">
@@ -150,7 +158,11 @@ export default function Home() {
                 <span>Node.js</span>
                 <span>Python</span>
               </div>
-              <a className="btn secondary" href="https://data-saas-platform.vercel.app/" target="_blank" rel="noopener noreferrer">Website</a>
+              <div className="project-links">
+                <a className="btn secondary" href="https://data-saas-platform.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink size={16} /> Website
+                </a>
+              </div>
             </article>
           </div>
         </section>
@@ -164,19 +176,23 @@ export default function Home() {
 
           <div className="skills-grid">
             <div className="skill-card">
-              <h3>🐍 Python</h3>
+              <span className="skill-icon"><Terminal size={20} /></span>
+              <h3>Python</h3>
               <p>API&apos;er, CLI-apps, JSON og backend-logik.</p>
             </div>
             <div className="skill-card">
-              <h3>🌐 HTML & CSS</h3>
+              <span className="skill-icon"><Globe size={20} /></span>
+              <h3>HTML & CSS</h3>
               <p>Responsive layouts og moderne UI.</p>
             </div>
             <div className="skill-card">
-              <h3>⚡ JavaScript</h3>
+              <span className="skill-icon"><Zap size={20} /></span>
+              <h3>JavaScript</h3>
               <p>DOM manipulation, events og web-interaktivitet.</p>
             </div>
             <div className="skill-card">
-              <h3>🗄️ SQL</h3>
+              <span className="skill-icon"><Database size={20} /></span>
+              <h3>SQL</h3>
               <p>Grundlæggende databaser ve queries.</p>
             </div>
           </div>
@@ -191,7 +207,7 @@ export default function Home() {
 
           <div className="timeline">
             <div className="timeline-item">
-              <span className="timeline-date">2025 - 2026</span>
+              <span className="timeline-date"><Calendar size={16} /> 2025 - 2026</span>
               <div>
                 <h3>TEC Ballerup · Grundforløb 2</h3>
                 <p>Data og Kommunikation · fokus på IT og programmering.</p>
@@ -199,7 +215,7 @@ export default function Home() {
             </div>
 
             <div className="timeline-item">
-              <span className="timeline-date">2026 - nu</span>
+              <span className="timeline-date"><Calendar size={16} /> 2026 - nu</span>
               <div>
                 <h3>TEC Ballerup · Skoleoplæring</h3>
                 <p>Videre arbejde med praktiske IT-opgaver og softwareudvikling.</p>
@@ -216,12 +232,25 @@ export default function Home() {
             <p>
               Jeg er interesseret i praktik og junior-muligheder.
             </p>
-            <a className="btn primary" href="mailto:Bdrhn.dnz00@gmail.com">Send email</a>
+            <a className="btn primary" href="mailto:Bdrhn.dnz00@gmail.com">
+              <Mail size={16} /> Send email
+            </a>
           </div>
         </section>
       </main>
 
       <footer>
+        <div className="footer-socials">
+          <a href="https://github.com/BedirhanD04" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <GithubIcon size={16} />
+          </a>
+          <a href="https://www.linkedin.com/in/bedirhan-donmez-98620b395/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <LinkedinIcon size={16} />
+          </a>
+          <a href="mailto:Bdrhn.dnz00@gmail.com" aria-label="Email">
+            <Mail size={16} />
+          </a>
+        </div>
         <p>© 2026 Bedirhan Donmez. Built with Next.js & Node.js.</p>
       </footer>
     </div>
