@@ -45,7 +45,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(4, 8, 16, 0.7);
+  background: rgba(4, 8, 16, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--card-border);
@@ -220,6 +220,21 @@ body {
   text-align: center;
 }
 
+.hero-photo-wrap {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1.25rem;
+}
+
+.hero-photo-wrap::before {
+  content: "";
+  position: absolute;
+  inset: -12% -12% 1.25rem -12%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.45), transparent 70%);
+  filter: blur(30px);
+  z-index: -1;
+}
+
 .profile-image {
   width: 100%;
   max-width: 250px;
@@ -240,6 +255,16 @@ body {
   border-radius: 20px;
   margin-top: 1rem;
   font-size: 0.85rem;
+}
+
+.status-card-float {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+  white-space: nowrap;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
 }
 
 .status-dot {
