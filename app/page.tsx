@@ -22,6 +22,15 @@ function LinkedinIcon({ size = 18 }: { size?: number }) {
 export default function Home() {
   return (
     <div>
+      <Velaris
+        className="fixed inset-0 -z-10 pointer-events-none"
+        height="100vh"
+        bg="#040810"
+        colors={["#60a5fa", "#3b82f6", "#1d4ed8", "#040810"]}
+        speed={1.1}
+        grain={0.25}
+      />
+
       <header className="site-header">
         <nav className="navbar">
           <a className="logo" href="#home">BD</a>
@@ -38,51 +47,43 @@ export default function Home() {
 
       <main>
         {/* HERO SECTION */}
-        <section id="home">
-          <Velaris
-            height="calc(100vh - 80px)"
-            bg="#040810"
-            colors={["#60a5fa", "#3b82f6", "#1d4ed8", "#040810"]}
-            speed={1.1}
-            grain={0.25}
-          >
-            <div className="hero section h-full">
-              <div className="hero-content">
-                <p className="eyebrow">Data & Kommunikation · TEC Ballerup</p>
-                <h1>Bedirhan Donmez</h1>
-                <h2>Software Development Student</h2>
-                <p className="hero-text">
-                  Jeg bygger Python-applikationer, arbejder med API&apos;er og udvikler moderne webprojekter.
-                  Mit mål er at blive stærkere inden for backend, databaser og praktisk softwareudvikling.
-                </p>
+        <section id="home" className="hero section">
+          <div className="hero-content">
+            <p className="eyebrow">Data & Kommunikation · TEC Ballerup</p>
+            <h1>Bedirhan Donmez</h1>
+            <h2>Software Development Student</h2>
+            <p className="hero-text">
+              Jeg bygger Python-applikationer, arbejder med API&apos;er og udvikler moderne webprojekter.
+              Mit mål er at blive stærkere inden for backend, databaser og praktisk softwareudvikling.
+            </p>
 
-                <div className="hero-buttons">
-                  <a className="btn primary" href="#projects">Se projekter</a>
-                  <a className="btn secondary" href="mailto:Bdrhn.dnz00@gmail.com">Kontakt mig</a>
-                </div>
+            <div className="hero-buttons">
+              <a className="btn primary" href="#projects">Se projekter</a>
+              <a className="btn secondary" href="mailto:Bdrhn.dnz00@gmail.com">Kontakt mig</a>
+            </div>
 
-                <div className="social-links">
-                  <a href="https://github.com/BedirhanD04" target="_blank" rel="noopener noreferrer">
-                    <GithubIcon /> GitHub
-                  </a>
-                  <a href="https://www.linkedin.com/in/bedirhan-donmez-98620b395/" target="_blank" rel="noopener noreferrer">
-                    <LinkedinIcon /> LinkedIn
-                  </a>
-                  <a href="mailto:Bdrhn.dnz00@gmail.com">
-                    <Mail size={18} /> Email
-                  </a>
-                </div>
-              </div>
+            <div className="social-links">
+              <a href="https://github.com/BedirhanD04" target="_blank" rel="noopener noreferrer">
+                <GithubIcon /> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/bedirhan-donmez-98620b395/" target="_blank" rel="noopener noreferrer">
+                <LinkedinIcon /> LinkedIn
+              </a>
+              <a href="mailto:Bdrhn.dnz00@gmail.com">
+                <Mail size={18} /> Email
+              </a>
+            </div>
+          </div>
 
-              <div className="hero-card">
-                <img src="/bedirhan.jpeg" alt="Bedirhan Donmez" className="profile-image" />
-                <div className="status-card">
-                  <span className="status-dot"></span>
-                  <span>Åben for praktik og junior-muligheder</span>
-                </div>
+          <div className="hero-card">
+            <div className="hero-photo-wrap">
+              <img src="/bedirhan.jpeg" alt="Bedirhan Donmez" className="profile-image" />
+              <div className="status-card status-card-float">
+                <span className="status-dot"></span>
+                <span>Åben for praktik og junior-muligheder</span>
               </div>
             </div>
-          </Velaris>
+          </div>
         </section>
 
         {/* ABOUT SECTION */}
