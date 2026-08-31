@@ -1,4 +1,4 @@
-import { Mail, Terminal, Globe, Zap, Database, Calendar, ExternalLink } from "lucide-react";
+import { Mail, Terminal, Globe, Zap, Database, Calendar, ExternalLink, Code2 } from "lucide-react";
 import Velaris from "@/components/ui/velaris";
 
 // lucide-react no longer ships trademarked brand logos, so GitHub/LinkedIn
@@ -194,7 +194,12 @@ export default function Home() {
             <div className="skill-card">
               <span className="skill-icon"><Database size={20} /></span>
               <h3>SQL</h3>
-              <p>Grundlæggende databaser ve queries.</p>
+              <p>databaser ve queries.</p>
+            </div>
+            <div className="skill-card">
+              <span className="skill-icon"><Code2 size={20} /></span>
+              <h3>C#</h3>
+              <p>Objektorienteret programmering og .NET-udvikling..</p>
             </div>
           </div>
         </section>
