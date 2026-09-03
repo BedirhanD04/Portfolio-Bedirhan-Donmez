@@ -139,7 +139,7 @@ export default function Home() {
                 <span>Entity Framework Core</span>
               </div>
               <div className="project-links">
-                <a className="btn secondary" href="https://github.com/BedirhanD04/library-management-system" target="_blank" rel="noopener noreferrer">
+                <a className="btn secondary" href="https://github.com/BedirhanD04/LibraryManagementSystem" target="_blank" rel="noopener noreferrer">
                   <GithubIcon size={16} /> GitHub
                 </a>
               </div>
