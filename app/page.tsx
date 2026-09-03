@@ -52,11 +52,7 @@ export default function Home() {
             <p className="eyebrow">Data & Kommunikation · TEC Ballerup</p>
             <h1>Bedirhan Donmez</h1>
             <h2>Software Development Student</h2>
-            <p className="hero-text">
-              Jeg bygger Python-applikationer, arbejder med API&apos;er og udvikler moderne webprojekter.
-              Mit mål er at blive stærkere inden for backend, databaser og praktisk softwareudvikling.
-            </p>
-
+            
             <div className="hero-buttons">
               <a className="btn primary" href="#projects">Se projekter</a>
               <a className="btn secondary" href="mailto:Bdrhn.dnz00@gmail.com">Kontakt mig</a>
@@ -78,7 +74,7 @@ export default function Home() {
           <div className="hero-card">
             <div className="hero-photo-wrap">
               <img src="/bedirhan.jpeg" alt="Bedirhan Donmez" className="profile-image" />
-              <div className="status-card status-card-float">
+              <div className="status-card ">
                 <span className="status-dot"></span>
                 <span>Åben for praktik og junior-muligheder</span>
               </div>
@@ -95,13 +91,11 @@ export default function Home() {
 
           <div className="glass-card">
             <p>
-              Mit navn er Bedirhan Donmez, og jeg er under uddannelse inden for Data og Kommunikation
-              på TEC Ballerup. Jeg har interesse for programmering, webudvikling, databaser og IT-support.
-            </p>
-            <br />
-            <p>
-              Jeg lærer bedst ved at bygge rigtige projekter. Derfor arbejder jeg løbende på egne projekter
-              med Python, API&apos;er, HTML, CSS, JavaScript og SQL.
+              Mit navn er Bedirhan Donmez, og jeg er under uddannelse inden for Data og
+              Kommunikation på TEC Ballerup. Jeg bygger backend-applikationer i Python og
+              C#/.NET, arbejder med RESTful API'er og databaser, og er i gang med at lære
+              React. Jeg lærer bedst ved at bygge rigtige projekter, og mit mål er at blive
+              en stærkere full-stack udvikler.
             </p>
           </div>
         </section>
@@ -133,17 +127,19 @@ export default function Home() {
             </article>
 
             <article className="project-card">
-              <h3>Smart Budget Assistant</h3>
+              <h3>Library Management System</h3>
               <p>
-                A lightweight personal finance application that helps users manage income and expenses.
+                A RESTful backend API for managing a library's books, authors, members,
+                and loans, built with a clean N-tier (layered) architecture and real
+                business rules for stock tracking and loan limits.
               </p>
               <div className="tech-list">
-                <span>Python</span>
-                <span>JSON</span>
-                <span>CLI</span>
+                <span>C#</span>
+                <span>ASP.NET Core</span>
+                <span>Entity Framework Core</span>
               </div>
               <div className="project-links">
-                <a className="btn secondary" href="https://github.com/BedirhanD04/budget_tracker" target="_blank" rel="noopener noreferrer">
+                <a className="btn secondary" href="https://github.com/BedirhanD04/library-management-system" target="_blank" rel="noopener noreferrer">
                   <GithubIcon size={16} /> GitHub
                 </a>
               </div>
