@@ -1,7 +1,8 @@
-import Link from "next/link";
 import { Mail, Terminal, Globe, Zap, Database, Calendar, ExternalLink, Code2 } from "lucide-react";
 import Velaris from "@/components/ui/velaris";
 
+// lucide-react no longer ships trademarked brand logos, so GitHub/LinkedIn
+// are rendered as small inline SVG marks instead.
 function GithubIcon({ size = 18 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -18,7 +19,7 @@ function LinkedinIcon({ size = 18 }: { size?: number }) {
   );
 }
 
-export default function Home() {
+export default function Kompetencer() {
   return (
     <div>
       <Velaris
@@ -32,53 +33,54 @@ export default function Home() {
 
       <header className="site-header">
         <nav className="navbar">
-          <Link className="logo" href="#home">BD</Link>
+          <a className="logo" href="#home">BD</a>
+
           <div className="nav-links">
-            <Link href="/">Home</Link>
-            <Link href="/about">Om mig</Link>
-            <Link href="/projects">Projekter</Link>
-            <Link href="/kompetencer">Kompetencer</Link>
+            <a href="/">Home</a>
+            <a href="/about">Om mig</a>
+            <a href="/projects">Projekter</a>
+            <a href="/kompetencer">Kompetencer</a>
           </div>
         </nav>
       </header>
 
-      <main>
-        {/* HERO SECTION */}
-        <section id="home" className="hero section">
-          <div className="hero-content">
-            <p className="eyebrow">Data & Kommunikation · TEC Ballerup</p>
-            <h1>Bedirhan Donmez</h1>
-            <h2>Software Development Student</h2>
-            
-            <div className="hero-buttons">
-              <Link className="btn primary" href="/projects">Se projekter</Link>
-              <a className="btn secondary" href="mailto:Bdrhn.dnz00@gmail.com">Kontakt mig</a>
-            </div>
 
-            <div className="social-links">
-              <a href="https://github.com/BedirhanD04" target="_blank" rel="noopener noreferrer">
-                <GithubIcon /> GitHub
-              </a>
-              <a href="https://www.linkedin.com/in/bedirhan-donmez-98620b395/" target="_blank" rel="noopener noreferrer">
-                <LinkedinIcon /> LinkedIn
-              </a>
-              <a href="mailto:Bdrhn.dnz00@gmail.com">
-                <Mail size={18} /> Email
-              </a>
-            </div>
+        {/* SKILLS SECTION */}
+        <section id="skills" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Kompetencer</p>
+            <h2>Teknologier jeg arbejder med</h2>
           </div>
 
-          <div className="hero-card">
-            <div className="hero-photo-wrap">
-              <img src="/bedirhan.jpeg" alt="Bedirhan Donmez" className="profile-image" />
-              <div className="status-card">
-                <span className="status-dot"></span>
-                <span>Åben for praktik og junior-muligheder</span>
-              </div>
+          <div className="skills-grid">
+            <div className="skill-card">
+              <span className="skill-icon"><Terminal size={20} /></span>
+              <h3>Python</h3>
+              <p>API&apos;er, CLI-apps, JSON og backend-logik.</p>
+            </div>
+            <div className="skill-card">
+              <span className="skill-icon"><Globe size={20} /></span>
+              <h3>HTML & CSS</h3>
+              <p>Responsive layouts og moderne UI.</p>
+            </div>
+            <div className="skill-card">
+              <span className="skill-icon"><Zap size={20} /></span>
+              <h3>JavaScript</h3>
+              <p>DOM manipulation, events og web-interaktivitet.</p>
+            </div>
+            <div className="skill-card">
+              <span className="skill-icon"><Database size={20} /></span>
+              <h3>SQL</h3>
+              <p>databaser ve queries.</p>
+            </div>
+            <div className="skill-card">
+              <span className="skill-icon"><Code2 size={20} /></span>
+              <h3>C#</h3>
+              <p>Objektorienteret programmering og .NET-udvikling..</p>
             </div>
           </div>
         </section>
-      </main>
+        
 
       <footer>
         <div className="footer-socials">

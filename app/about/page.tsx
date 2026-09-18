@@ -18,7 +18,7 @@ function LinkedinIcon({ size = 18 }: { size?: number }) {
   );
 }
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Velaris
@@ -33,6 +33,7 @@ export default function Home() {
       <header className="site-header">
         <nav className="navbar">
           <Link className="logo" href="#home">BD</Link>
+
           <div className="nav-links">
             <Link href="/">Home</Link>
             <Link href="/about">Om mig</Link>
@@ -43,42 +44,52 @@ export default function Home() {
       </header>
 
       <main>
-        {/* HERO SECTION */}
-        <section id="home" className="hero section">
-          <div className="hero-content">
-            <p className="eyebrow">Data & Kommunikation · TEC Ballerup</p>
-            <h1>Bedirhan Donmez</h1>
-            <h2>Software Development Student</h2>
-            
-            <div className="hero-buttons">
-              <Link className="btn primary" href="/projects">Se projekter</Link>
-              <a className="btn secondary" href="mailto:Bdrhn.dnz00@gmail.com">Kontakt mig</a>
-            </div>
 
-            <div className="social-links">
-              <a href="https://github.com/BedirhanD04" target="_blank" rel="noopener noreferrer">
-                <GithubIcon /> GitHub
-              </a>
-              <a href="https://www.linkedin.com/in/bedirhan-donmez-98620b395/" target="_blank" rel="noopener noreferrer">
-                <LinkedinIcon /> LinkedIn
-              </a>
-              <a href="mailto:Bdrhn.dnz00@gmail.com">
-                <Mail size={18} /> Email
-              </a>
-            </div>
+        {/* ABOUT SECTION */}
+        <section id="about" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Om mig</p>
           </div>
 
-          <div className="hero-card">
-            <div className="hero-photo-wrap">
-              <img src="/bedirhan.jpeg" alt="Bedirhan Donmez" className="profile-image" />
-              <div className="status-card">
-                <span className="status-dot"></span>
-                <span>Åben for praktik og junior-muligheder</span>
+          <div className="glass-card">
+            <p>
+              Mit navn er Bedirhan Dønmez, og jeg er under uddannelse inden for Data og Kommunikation med speciale i programmering på TEC Ballerup.
+              Min interesse for teknologi startede med nysgerrighed for, hvordan systemer hænger sammen bag kulisserne,
+              og har siden udviklet sig til en passion for at bygge løsninger fra bunden.
+              Jeg arbejder primært med backend-udvikling i Python og C#/.NET, hvor jeg har erfaring med RESTful API'er, databasedesign og CRUD-operationer i MSSQL Server.
+              På frontend-siden er jeg i gang med at lære React, efter tidligere at have arbejdet med HTML, CSS og JavaScript i praktiske projekter.
+              Jeg har blandt andet bygget et C#-konsolspil, en SQL-database med tilhørende WinForms-applikation, og et interaktivt spil i JavaScript med API-integration.
+              Mit mål er at udvikle mig til en stærk full-stack udvikler og bidrage til projekter, hvor jeg både kan udfordre mig selv og skabe reel værdi.
+            </p>
+          </div>
+        </section>
+
+        {/* EDUCATION SECTION */}
+        <section id="education" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Baggrund</p>
+            <h2>Uddannelse og erfaring</h2>
+          </div>
+
+          <div className="timeline">
+            <div className="timeline-item">
+              <span className="timeline-date"><Calendar size={16} /> 2025 - 2026</span>
+              <div>
+                <h3>TEC Ballerup · Grundforløb 2</h3>
+                <p>Data og Kommunikation · fokus på IT og programmering.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <span className="timeline-date"><Calendar size={16} /> 2026 - nu</span>
+              <div>
+                <h3>TEC Ballerup · Skoleoplæring</h3>
+                <p>Videre arbejde med praktiske IT-opgaver og softwareudvikling.</p>
               </div>
             </div>
           </div>
         </section>
-      </main>
+       </main>    
 
       <footer>
         <div className="footer-socials">
