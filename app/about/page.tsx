@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Terminal, Globe, Zap, Database, Calendar, ExternalLink, Code2 } from "lucide-react";
+import { Mail, Calendar } from "lucide-react";
 import Velaris from "@/components/ui/velaris";
 
 function GithubIcon({ size = 18 }: { size?: number }) {

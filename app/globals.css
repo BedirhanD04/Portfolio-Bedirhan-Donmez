@@ -148,12 +148,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.hero-text {
-  color: var(--text-muted);
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
 .hero-buttons {
   display: flex;
   gap: 1rem;
@@ -257,16 +251,6 @@ body {
   font-size: 0.85rem;
 }
 
-.status-card-float {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 0;
-  white-space: nowrap;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
-}
-
 .status-dot {
   width: 8px;
   height: 8px;
@@ -297,7 +281,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.glass-card, .project-card, .skill-card, .contact-card {
+.glass-card, .project-card, .skill-card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   padding: 1.75rem;
@@ -317,29 +301,6 @@ body {
   border-color: var(--card-border-hover);
   background: var(--card-bg-hover);
   box-shadow: var(--shadow-glow);
-}
-
-.contact-card {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.18), transparent 70%);
-  pointer-events: none;
-}
-
-.contact-card > * {
-  position: relative;
-}
-
-.contact-card p {
-  margin-bottom: 1.5rem;
-  color: var(--text-muted);
 }
 
 .skill-icon {

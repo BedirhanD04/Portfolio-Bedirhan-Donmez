@@ -1,4 +1,4 @@
-import { Mail, Terminal, Globe, Zap, Database, Calendar, ExternalLink, Code2 } from "lucide-react";
+import { Mail, Terminal, Globe, Zap, Database, Code2 } from "lucide-react";
 import Velaris from "@/components/ui/velaris";
 
 // lucide-react no longer ships trademarked brand logos, so GitHub/LinkedIn
