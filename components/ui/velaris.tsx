@@ -132,12 +132,11 @@ const Velaris = ({
       return s;
     };
 
+    const vertexShader = createShader(gl.VERTEX_SHADER, vertexShaderGLSL);
+    const fragmentShader = createShader(gl.FRAGMENT_SHADER, fragmentShaderGLSL);
     const program = gl.createProgram()!;
-    gl.attachShader(program, createShader(gl.VERTEX_SHADER, vertexShaderGLSL));
-    gl.attachShader(
-      program,
-      createShader(gl.FRAGMENT_SHADER, fragmentShaderGLSL),
-    );
+    gl.attachShader(program, vertexShader);
+    gl.attachShader(program, fragmentShader);
     gl.linkProgram(program);
     gl.useProgram(program);
 
@@ -189,6 +188,10 @@ const Velaris = ({
     return () => {
       ro.disconnect();
       cancelAnimationFrame(raf);
+      gl.deleteBuffer(buffer);
+      gl.deleteProgram(program);
+      gl.deleteShader(vertexShader);
+      gl.deleteShader(fragmentShader);
     };
   }, [bg, colors, speed, grain]);
 
